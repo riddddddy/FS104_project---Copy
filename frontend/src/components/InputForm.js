@@ -35,7 +35,7 @@ const InputForm = ({ expensesData, setShouldFetch, setCountry={setCountry}, setE
 
         const expense = { country, expenditureItem, price, remarks }
 
-        const response = await fetch(`/api/expenses/`, {
+        const response = await fetch(`https://fs104backendproject.onrender.com/api/expenses/`, {
             method: 'POST',
             body: JSON.stringify(expense),
             headers: {
@@ -82,7 +82,7 @@ const InputForm = ({ expensesData, setShouldFetch, setCountry={setCountry}, setE
 
         const expense = { country, expenditureItem, price, remarks }
 
-        const response = await fetch(`/api/expenses/${expenseID}`, {
+        const response = await fetch(`https://fs104backendproject.onrender.com/api/expenses/${expenseID}`, {
             method: 'PATCH',
             body: JSON.stringify(expense),
             headers: {

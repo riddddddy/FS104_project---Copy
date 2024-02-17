@@ -21,7 +21,7 @@ const ExpensesDetails = ({ country, expenditureItem, price, remarks, expensesDat
             return
         }
 
-        const response = await fetch('/api/expenses/' + _id, {
+        const response = await fetch('https://fs104backendproject.onrender.com/api/expenses/' + _id, {
             method: 'DELETE',
             headers: {
                 'Authorization': `Bearer ${user.token}`

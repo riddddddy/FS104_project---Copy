@@ -47,7 +47,7 @@ const Main = () => {
     useEffect(() => {
         const fetchExpenses = async () => {
             try {
-                const data = await fetch("/api/expenses", {
+                const data = await fetch("https://fs104backendproject.onrender.com/api/expenses", {
                     headers:{
                         'Authorization': `Bearer ${user.token}`
                     }
